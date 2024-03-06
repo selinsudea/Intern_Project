@@ -1,7 +1,7 @@
 # Intern_Project
 <h2>Book Review Website</h2>
 <h2>📖 How to Download the Project and Run on your PC?</h2>
-<img src="Information.png>
+<img width="1497" alt="Information" src="https://github.com/selinsudea/Intern_Project/assets/122131841/2613fd4e-8865-4ef9-b506-12d0a0362fa6">
 <p>During my 2-month internship at Ümraniye Municipality, I had the opportunity
 to create a website. During this time, I had the chance to improve myself
 further by designing a website to improve my practical knowledge and skills.</p>
