@@ -2,7 +2,8 @@
 📖 How to Download the Project and Run on your PC?
 Pre-Requisites:
 Download and Install XAMPP
-[Click Here to Download] (https://www.apachefriends.org/index.html)
+<a href="https://www.apachefriends.org/index.html">Click Here to Download</a>
+
 
 Install any Text Editor (Sublime Text or Visual Studio Code or Atom or Brackets)
 Installation
