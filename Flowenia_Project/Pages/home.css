@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-image: url("b1.jpeg");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.main-header {
+  /* background-color: beige; */
+  padding: 8px 16px;
+}
+
+.main-nav {
+  display: inline-block;
+  width: calc(100% - 110px);
+  text-align: right;
+}
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0 15px;
+}
+#main-header__logo {
+  color: #366d6f;
+
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+}
+.main-nav__item a {
+  text-decoration: none;
+  color: #366d6f;
+
+  font-size: 20px;
+}
+#about_div {
+  z-index: 1;
+  position: relative;
+  /* border: 5px solid palevioletred; */
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  color: #366d6f;
+
+  margin: 30px auto;
+  border-radius: 20px;
+  font-size: 20px;
+  width: 600px;
+  height: 640px;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+#home_ul {
+  list-style: none;
+}
+
+#home_ul li {
+  padding-top: 15px;
+}
+
+#author_lc {
+  margin-left: 50px;
+  width: 250px;
+}
+#comment_l {
+  resize: none;
+}
+
+#book_names {
+  margin-left: 10px;
+  width: 250px;
+}
+#publishers {
+  margin-left: 30px;
+  width: 250px;
+}
+#language_c {
+  margin-left: 25px;
+  width: 250px;
+}
+#vote_c {
+  margin-left: 70px;
+  width: 250px;
+}
+#enter_btn {
+  margin-left: 230px;
+}
+.c_error {
+  display: none;
+  /* margin-top: 5px; */
+  margin-top: 10px;
+  border: 2px solid rgba(32, 209, 156, 0.5);
+  border-radius: 20px;
+  background-color: rgba(32, 209, 156, 0.5);
+  font-size: 20px;
+}
+/* Alt menüyü varsayılan olarak gizle */
+#asagi_ul {
+  display: none;
+  position: absolute;
+  right: 20px;
+  z-index: 4;
+}
+
+/* "Settings" öğesine fare geldiğinde alt menüyü görünür yap */
+.main-nav__item:hover #asagi_ul {
+  display: block;
+}
+
+/* Alt menü öğelerini düzenler */
+#asagi_ul li {
+  margin-bottom: 5px;
+  list-style: none;
+}
+
+/* Alt menüden ayrıldığınızda alt menüyü gizle */
+.main-nav__item:not(:hover) #asagi_ul {
+  display: none;
+}
+#asagi_ul li:hover {
+  background-color: #0d676a6b;
+}
+#asagi_ul li a {
+  text-decoration: none;
+}

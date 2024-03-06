@@ -1,0 +1,64 @@
+  <div class="content-wrapper">
+      
+
+  
+   
+      <div id="about_bookss">
+  
+  <ul id="comment_ul">
+  <form action="#" method="POST">
+      <?php 
+      if (isset($_GET['id'])) {
+          $id = urldecode($_GET['id']);
+  
+      }
+  
+      include "mysql_connect.php";
+      $query = "SELECT * FROM Books";
+      $query2 = "SELECT * FROM allbooks";
+      $result = mysqli_query($connection, $query);
+      $numRows = mysqli_num_rows($result);
+      $result2 = mysqli_query($connection, $query2);
+      $numRows2 = mysqli_num_rows($result2);
+      $arr = array();
+      $vote;
+      for ($i = 0; $i < $numRows; $i++) {
+         $row = mysqli_fetch_assoc($result);
+      
+       if($row['id']==$id){
+     for($j = 0; $j < $numRows2; $j++){
+      $row2 = mysqli_fetch_assoc($result2);
+
+      if($row['author_name']==$row2['author_name']&&$row['book_name']==$row2['book_name']){
+        echo "<li id='about_book'>    
+
+      <div id='kalem_divs'>
+            <div id=com_div>    $row2[comment] </div><div id='den'> $vote <br> $row2[date] <div id='vertival_line'>  </div> 
+     <div>Yorumu onaylıyor musunuz?   
+      <br>
+
+      <div id=btn_a>
+      <a href='#'class='btn btn-outline-info btn-sm active'role='button' aria-pressed='true' id='yes_btn'>Evet</a>
+      <a href='#'class='btn btn-outline-info btn-sm active'role='button' aria-pressed='true'>Hayır</a>
+      </div> 
+
+   
+    
+      </div>
+    
+      </div>
+      
+      </li>    
+  
+         ";
+      }
+     }
+         break;
+  }
+      }
+      ?>
+  </form>
+  </ul>
+      </div>
+     
+      </div>

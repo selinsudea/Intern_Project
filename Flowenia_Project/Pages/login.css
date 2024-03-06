@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  /* background-image: url("p1.jpeg"); */
+  background-image: url("b1.jpeg");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.main-header {
+  /* background-color: beige; */
+  padding: 8px 16px;
+}
+
+.main-nav {
+  display: inline-block;
+  width: calc(100% - 110px);
+  text-align: right;
+}
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0 15px;
+}
+#main-header__logo {
+  /* color: #4c2e72; */
+  color: #366d6f;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+}
+.main-nav__item a {
+  text-decoration: none;
+  color: #366d6f;
+  font-size: 20px;
+}
+#login_div {
+  color: #366d6f;
+  margin: 80px auto;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  font-size: 20px;
+  background: transparent;
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login_ul {
+  list-style: none;
+}
+#login_ul li {
+  padding-top: 15px;
+}
+#login_ul li a {
+  color: #4e82b2;
+}
+
+#button_login {
+  margin-top: 20px;
+}
+#h2_login {
+  margin-left: 40px;
+}
+#password_lc {
+  margin-left: 15px;
+}
+#username_lc {
+  margin-left: 10px;
+}
+#password_l {
+  font-size: 17px;
+}
+#forget_password {
+  font-size: 17px;
+}
+#new_accountl {
+  font-size: 17px;
+}
+#create_account {
+  font-size: 17px;
+}

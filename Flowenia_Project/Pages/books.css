@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url("b1.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-header {
+  padding: 8px 16px;
+}
+
+.main-nav {
+  display: inline-block;
+  width: calc(100% - 110px);
+  text-align: right;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+#main-header__logo {
+  color: #3c7775;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: #3c7775;
+  font-size: 20px;
+}
+
+#search {
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  color: #3c7775;
+  border-radius: 20px;
+  font-size: 20px;
+  width: 1492px;
+  height: 30px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-group-item {
+  list-style: none;
+}
+
+.col-3 {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #bfaac4;
+
+  width: 350px;
+  min-height: 550px;
+  margin-left: 25px;
+}
+#li_ed {
+  margin-left: -25px;
+}
+#li_d {
+  line-height: 20px;
+  padding-top: 3px;
+}
+#btn_filter {
+  margin-left: -45px;
+}
+
+#books {
+  margin-right: 40px;
+
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#books_ul {
+  list-style: none;
+  display: flex;
+
+  flex-wrap: wrap;
+  /* Kitapları yan yana sırala ve sığmazsa alta kaydır */
+  justify-content: space-between;
+  /* Kitapları yatayda eşit aralıklarla dağıt */
+}
+
+#books_li {
+  list-style: none;
+
+  margin: 20px 0;
+
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#men {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+#filter_li {
+  list-style: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+/* Alt menüyü varsayılan olarak gizle */
+#asagi_ul {
+  display: none;
+  position: absolute;
+  right: 20px;
+  z-index: 4;
+}
+
+/* "Settings" öğesine fare geldiğinde alt menüyü görünür yap */
+.main-nav__item:hover #asagi_ul {
+  display: block;
+}
+
+/* Alt menü öğelerini düzenler */
+#asagi_ul li {
+  margin-bottom: 5px;
+  list-style: none;
+}
+
+/* Alt menüden ayrıldığınızda alt menüyü gizle */
+.main-nav__item:not(:hover) #asagi_ul {
+  display: none;
+}
+#asagi_ul li:hover {
+  background-color: #0d676a6b;
+}
+#asagi_ul li a {
+  text-decoration: none;
+}
