@@ -1,5 +1,10 @@
 # Intern_Project
+<h2>Book Review Website</h2>
 <h2>📖 How to Download the Project and Run on your PC?</h2>
+<img src="Information.png>
+<p>During my 2-month internship at Ümraniye Municipality, I had the opportunity
+to create a website. During this time, I had the chance to improve myself
+further by designing a website to improve my practical knowledge and skills.</p>
 <h3>Pre-Requisites:</h3>
 <ol>
   <li>Download and Install XAMPP
